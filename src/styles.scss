@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -43,6 +44,78 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+}
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0) translateY(-200px)
+}
+.location {
+    color: var(--white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.temperature {
+    color: var(--white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   font-size: 33px;
+   font-weight: 600;
+}
+.more-info-container{
+    border: 1px solid red;
+    background-color: var(--shadow-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1 em;
+    height: 323px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.more-info-label{
+    background: var(--shadow-dark);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.info-block{
+    border: 1px solid red;
     width: 50%;
-    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.info-block-label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-block-label img{
+    width: 16px;
+}
+.info-block-label span {
+    color: var(--white);
+    font-size: 16px;
+}
+.info-block-value {
+    color: var(--white);
+    font-size: 12px;
 }
