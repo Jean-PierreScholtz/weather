@@ -20,7 +20,7 @@ body {
     width: 100%;
     height: 100vh;
     background: var(--blue-1);
-    
+    // Adjusts image container to the center of the page
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ body {
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark);
 }
-.output-data{
+.upper-data  {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -51,13 +51,13 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 20%;
-    background-color: none;
+    height: 100%;
+    background-color: var(--shadow-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateX(0) translateY(-200px)
+    
 }
 .location {
     color: var(--white);
@@ -71,51 +71,53 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
    font-size: 33px;
-   font-weight: 600;
+   font-weight: 900;
+}
+.more-info-label{
+    color: var(--white);
 }
 .more-info-container{
-    border: 1px solid red;
     background-color: var(--shadow-light);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: 1 em;
-    height: 323px;
-
+    margin-top: 1em;
+    height: 300px;
+  
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.more-info-label{
-    background: var(--shadow-dark);
-    color: var(--white);
-    font-weight: 400;
-    font-size: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
 .info-block{
-    border: 1px solid red;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: row;
+    border: 1px solid white;
+    height: 32%;
+
 }
 .info-block-label{
+    
     width: 50%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
-.info-block-label img{
-    width: 16px;
+.info-block img{
+    width: 1em;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+
 }
-.info-block-label span {
+.info-label span {
     color: var(--white);
-    font-size: 16px;
+    font-size: 0.8em;
 }
 .info-block-value {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white);
-    font-size: 12px;
 }
