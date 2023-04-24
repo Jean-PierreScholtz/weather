@@ -2,13 +2,13 @@
   <!-- The upper-data section -->
   <div class="upper-data">
     <!-- Display a landscape image if 14 > 15, else display a different landscape image -->
-    <img src="../assets/landscape-1844226_1280.png" *ngIf="14 > 15" width="410px" height="310px">
-    <img src="../assets/landscape-1844230_1280.png" *ngIf="14 <= 15" width="410px" height="310px" >
+    <img src="../assets/landscape-1844226_1280.png" *ngIf="14 > 15" width="410px" height="310px"> <!-- if 14 is greater than 15, display this image -->
+    <img src="../assets/landscape-1844230_1280.png" *ngIf="14 <= 15" width="410px" height="310px" > <!-- if 14 is less than or equal to 15, display this image -->
 
     <!-- Display the current weather information for Wellington -->
     <div class="weather-data">
       <div class="location">Wellington</div>
-      <div class="temperature">{{ 14.2 | number: '1.0-0' }}°C</div>
+      <div class="temperature">{{ 14.2 | number: '1.0-0' }}°C</div> <!-- display the temperature in Celsius -->
     </div>
   </div>
 
@@ -18,7 +18,7 @@
     <div class="more-info-label">
       More Information
     </div>
-    
+
     <!-- A container for additional weather information -->
     <div class="more-info-container">
       <!-- Display the min temperature -->
@@ -28,7 +28,7 @@
           <span>Min</span>
         </div>
         <div class="info-block-value">
-          10°C
+          10°C <!-- display the minimum temperature in Celsius -->
         </div>
       </div>
       <!-- Display the humidity -->
@@ -38,7 +38,8 @@
           <span>Humidity</span>
         </div>
         <div class="info-block-value">
-          10°C
+          10°C <!-- display the humidity -->
+          <!-- alt + 0176 creates Celcuis icon -->
         </div>
       </div>
       <!-- Display the wind speed -->
@@ -48,7 +49,7 @@
           <span>Wind</span>
         </div>
         <div class="info-block-value">
-          1km/hr
+          1km/hr <!-- display the wind speed -->
         </div>
       </div>
       <!-- Display the probability of rain -->
@@ -58,7 +59,7 @@
           <span>Rain</span>
         </div>
         <div class="info-block-value">
-          10%
+          10% <!-- display the probability of rain -->
         </div>
       </div>
     </div>
@@ -67,4 +68,3 @@
   <!-- A directive for Angular routing -->
   <router-outlet></router-outlet>
 </div>
-
